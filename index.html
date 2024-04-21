@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- 
+    SITE 1101 Principles of Information Systems Spring 2024 
+    (c)2024 by Mammadov Ismayil 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <link rel="icon" id="logoforsite" href="media\Alpha.png">
+        <title>Homework 3: How websites work?</title>
+        <link href="Style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="content">
+        <p id="current-time"></p>
+        <p id="currentDate"></p>
+        <!--<img id="dayornight" src="" alt="image">-->
+        <script src="Timer.js"></script>
+        <script>
+        function workingTimer()
+        {
+            document.getElementById("current-time").innerHTML =Timer();
+        }
+        document.getElementById('currentDate').textContent =currentDate();
+        workingTimer();
+        setInterval(workingTimer, 1000);
+        //picturebytime();
+        
+        </script>
+        <!-- dear Araz muellim, menim groupmates are lazy -->
+
+        <h1 id="intro">AlphaCoders</h1>
+        <h4>Our team №9 called AlphaCoders presents to you a website created <br>for the course SITE 1101, 
+            below you can find information about our <br>groupmates and you can also see our logo which 
+            consists of a mix <br>of the Greek letter "Alpha" and the letter "C"</h4>
+        <img id="logo" src='media\Alpha512.jpg' alt="image " >
+        <h2>We have 4 groupmembers</h2>
+        <ul>
+            <li><a class="portrait-link" href="Members.html #IsmailPort">
+                <img src="media\20240417_205156.jpg" alt="IsmailPort" id="IsmailPort" width="400px">
+                <span id="Name" class="caption">Mammadov Ismayil</span>
+            </a></li>
+            <li><a class="portrait-link" href="Members.html #AylinPort">
+                <img src="media\Aylin.jpg" alt="AylinPort" id="IsmailPort" width="400px">
+                <span id="Name" class="caption">Aylin Musayeva</span>
+            </a></li>
+            <li><a class="portrait-link" href="Members.html #JamalPort">
+                <img src="media/YKCI1797.JPG" alt="JamalPort" id="JamalPort" width="400px">
+                <span id="Name" class="caption">Jamal Babazade</span>
+            </a></li>
+            <li><a class="portrait-link" href="Members.html #NihadPort">
+                <img src="media\Screenshot_64.png" alt="IsmailPort" id="IsmailPort" width="400px">
+                <span id="Name" class="caption">Nihad Mustafayev</span>
+            </a></li>
+        </ul>
+        <br>
+        <h1>Hour of Code</h1>
+        <h4>Hour of Code is an event that was held by our <br>team at school №145, more information here --> <a href="Hour of code.html">Hour of code</a> </h4><br>
+        <h1>Information about our Website project</h1>
+        <h4>Follow this link to find more information<br> about our website project --><a href="Our project.html">Website Project</a></h4>
+    </div>
+    </body>
+</html>
