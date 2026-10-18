@@ -23,9 +23,9 @@ function picturebytime(){
     if((hours>=22&&hours<=24)||(hours<=6))  {
         document.getElementById('background').style.backgroundImage='url("https://gravity.az/images/ada1.jpg")'; 
     } else if (hours>6&&hours<=17){
-        document.getElementById('background').style.backgroundImage='url("https://www.ada.edu.az/frq-content/plugins/yourfuture_content_x1/entry/20181226142927_16125700.jpg")' 
+        document.getElementById('background').style.backgroundImage='url("https://univerlist.com/media/images/university/unnamed_IpqFvMY.jpg")' 
     } else {
-        document.getElementById('background').style.backgroundImage='url("https://www.ada.edu.az/frq-content/plugins/about_content_x1/entry/20200513131135_88907000.jpg")';
+        document.getElementById('background').style.backgroundImage='url("https://www.ada.edu.az/media/2025/09/05/170826837_4229599597059787_1384429669327475936_n.jpg")';
     }
 
 }   
